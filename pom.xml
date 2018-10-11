@@ -58,6 +58,11 @@
 					<buildArgs>
 						<JAR_FILE>target/${project.build.finalName}.jar</JAR_FILE>
 					</buildArgs>
+					<archive>
+					<manifest>
+						<mainClass>controllers.SpringbootWithJUnit</mainClass>
+					</manifest>
+				</archive>
 				</configuration>
 			</plugin>
 
