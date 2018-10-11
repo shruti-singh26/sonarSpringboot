@@ -1,4 +1,4 @@
-FROM openjdk:8-jdk-alpine
+FROM java:8
 COPY target/*.jar /usr/src/springfiles/
 WORKDIR /usr/src/springfiles/
 EXPOSE 8080
