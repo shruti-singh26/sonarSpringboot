@@ -3,9 +3,10 @@ package testcases;
 import static org.junit.Assert.*;
 
 import org.junit.Test;
-import org.junit.*;
 
-import methods.Operations;
+import com.shruti.methods.Operations;
+
+import org.junit.*;
 
 public class FunctionTest {
 

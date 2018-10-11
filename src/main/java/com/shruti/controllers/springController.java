@@ -1,4 +1,4 @@
-package controllers;
+package com.shruti.controllers;
 
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.web.ErrorMvcAutoConfiguration;
@@ -7,7 +7,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import methods.Operations;
+import com.shruti.methods.Operations;
 
 @RestController
 public class springController {

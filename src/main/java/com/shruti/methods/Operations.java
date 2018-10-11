@@ -1,4 +1,4 @@
-package methods;
+package com.shruti.methods;
 
 public class Operations {
 	

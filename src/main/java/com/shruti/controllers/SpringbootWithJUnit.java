@@ -1,4 +1,4 @@
-package controllers;
+package com.shruti.controllers;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
