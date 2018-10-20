@@ -17,7 +17,7 @@ public class springController {
 	
 	@RequestMapping("/")
 	public String home(){
-		return "homepage";
+		return "homepage-new";
 	}
 	
 	@RequestMapping("/add")
