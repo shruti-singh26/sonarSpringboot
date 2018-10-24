@@ -9,7 +9,7 @@ namespace=${branchname}
 fi
 echo "${namespace}"
 echo "${GIT_URL}"
-appname="spring-appLayer"
+appname="spring-applayer"
 echo "${appname}"
 deploymentname="${appname}-deployment"
 echo "${deploymentname}"
@@ -36,7 +36,7 @@ sed -i "s|\$IMAGE_NAME|${IMAGE_NAME}|g" ${WORKSPACE}/deployment.yaml
 sed -i "s|\$appname|${appname}|g" ${WORKSPACE}/service.yaml
 sed -i "s|\$servicename|${servicename}|g" ${WORKSPACE}/service.yaml
 sed -i "s|\$deploymentname|${deploymentname}|g" ${WORKSPACE}/service.yaml
-kubectl get ns ${namespace} || kubectl create ns ${namespace}
-kubectl create -f ${WORKSPACE}/deployment.yaml --namespace=${namespace}
-kubectl create -f ${WORKSPACE}/service.yaml --namespace=${namespace}
+/usr/local/bin/kubectl get ns ${namespace} || kubectl create ns ${namespace}
+/usr/local/bin/kubectl create -f ${WORKSPACE}/deployment.yaml --namespace=${namespace}
+/usr/local/bin/kubectl create -f ${WORKSPACE}/service.yaml --namespace=${namespace}
 fi
